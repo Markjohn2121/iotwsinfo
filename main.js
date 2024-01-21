@@ -40,7 +40,7 @@ $(document).ready(function() {
   // Load developer information dynamically
   var developersContainer = $('#developer .developer-container');
   $.ajax({
-    url: './developerImage/', // Assuming this is the path to your developers' images folder
+    url: 'https://firebasestorage.googleapis.com/v0/b/iot-aws-a65d9.appspot.com/', // Assuming this is the path to your developers' images folder
     success: function(data) {
       $(data).find("a:contains('.jpg')").each(function() {
         var image = $(this).attr("href");
