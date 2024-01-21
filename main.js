@@ -47,7 +47,7 @@ $(document).ready(function() {
         var developer = {
           name: image.replace('.jpg', ''),
           role: 'Developer',
-          image: image
+          image: "developerImage/official.jpg"
         };
 
         var im = developer.image;
