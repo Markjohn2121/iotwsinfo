@@ -24,7 +24,7 @@ $(document).ready(function() {
   // Load screenshots images dynamically
   var screenshotsContainer = $('#screenshots .carousel-inner');
   $.ajax({
-    url: ' https://markjohn2121.github.io/iotwsinfo/bannerImage/', // Assuming this is the path to your screenshots images folder
+    url: ' https://markjohn2121.github.io/iotwsinfo/bannerImage', // Assuming this is the path to your screenshots images folder
     success: function(data) {
       $(data).find("a:contains('.jpg')").each(function() {
         var image = $(this).attr("href");
