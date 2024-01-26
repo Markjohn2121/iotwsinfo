@@ -1,7 +1,7 @@
 $(document).ready(function() {
   
   
-  
+ // https://github.com/Markjohn2121/iotwsinfo/tree/8e70341b06ead831d6ee15d3bbf0fe8ab66d7267/bannerImage
   
   
   
@@ -24,7 +24,7 @@ $(document).ready(function() {
   // Load screenshots images dynamically
   var screenshotsContainer = $('#screenshots .carousel-inner');
   $.ajax({
-    url: 'iotwsinfo/bannerImage', // Assuming this is the path to your screenshots images folder
+    url: 'https://github.com/Markjohn2121/iotwsinfo/tree/8e70341b06ead831d6ee15d3bbf0fe8ab66d7267/bannerImage/', // Assuming this is the path to your screenshots images folder
     success: function(data) {
       $(data).find("a:contains('.jpg')").each(function() {
         var image = $(this).attr("href");
