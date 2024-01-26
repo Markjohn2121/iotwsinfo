@@ -40,7 +40,7 @@ $(document).ready(function() {
   // Load developer information dynamically
   var developersContainer = $('#developer .developer-container');
   $.ajax({
-    url: 'developerImage/', // Assuming this is the path to your developers' images folder
+    url: 'iotinfo/developerImage/', // Assuming this is the path to your developers' images folder
     success: function(data) {
       $(data).find("a:contains('.jpg')").each(function() {
         var image = $(this).attr("href");
